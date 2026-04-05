@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Personal website" />
-    <title>Your Name — Personal site</title>
+    <meta
+      name="description"
+      content="Trevor Vaughn — publications, notes, and personal page."
+    />
+    <title>Trevor Vaughn</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -16,84 +19,157 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
+    <nav class="site-nav" aria-label="Primary">
+      <div class="wrap nav-inner">
+        <a class="nav-brand" href="#">Trevor Vaughn</a>
+        <ul class="nav-links">
+          <li><a href="#general">General</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#notes">Notes</a></li>
+          <li><a href="#personal">Personal</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <header class="site-header">
       <div class="wrap header-inner">
+        <div class="header-text">
+          <h1 class="site-title">Trevor Vaughn</h1>
+          <p class="lede">
+            Sophomore at Carnegie Mellon University
+          </p>
+          <ul class="external-inline">
+            <li>
+              <a href="https://github.com/t-vaughn" rel="me">GitHub</a>
+            </li>
+            <li>
+              <a href="mailto:you@example.com">Email</a>
+            </li>
+          </ul>
+        </div>
         <img
           class="avatar"
           src="assets/avatar-placeholder.svg"
-          width="96"
-          height="96"
-          alt="Portrait placeholder — replace with your photo"
+          width="180"
+          height="180"
+          alt=""
         />
-        <div class="header-text">
-          <h1 class="site-title">Your Name</h1>
-          <p class="tagline">One line about what you do (edit in <code>index.html</code>).</p>
-          <p class="contact">
-            <a class="email" href="mailto:you@example.com">you@example.com</a>
-          </p>
-        </div>
       </div>
     </header>
 
-    <main id="main" class="wrap">
-      <section class="section" aria-labelledby="pub-heading">
+    <main id="main" class="wrap layout-main">
+      <section
+        id="general"
+        class="section section-anchor"
+        aria-labelledby="general-heading"
+      >
+        <h2 id="general-heading">General</h2>
+        <p>
+          My interests lie primarily in graph algorithms, especially those relating to cuts, flows, and graph decompositions.
+        </p>
+        <p>
+          I also go by Ash. I am easiest to reach by email.
+        </p>
+      </section>
+
+      <section
+        id="publications"
+        class="section section-anchor"
+        aria-labelledby="pub-heading"
+      >
         <h2 id="pub-heading">Publications</h2>
-        <p class="section-lead">Papers and preprints. Replace with your own entries.</p>
+        <p class="section-lead">
+          Preprints and papers.
+        </p>
         <ul class="pub-list">
-          <li class="pub-item">
-            <span class="pub-title">Example Paper Title</span>
-            <span class="pub-meta">Conference / Journal, 2026.</span>
-            <span class="pub-links">
-              <a href="#">PDF</a>
-              <a href="#">arXiv</a>
-            </span>
-          </li>
-          <li class="pub-item">
-            <span class="pub-title">Another Publication</span>
-            <span class="pub-meta">Workshop, 2025.</span>
-            <span class="pub-links"><a href="#">PDF</a></span>
-          </li>
+          <!-- <li class="pub-item"> -->
+            <!-- <span class="pub-title">Your paper title (example)</span> -->
+            <!-- <span class="pub-authors">T. Vaughn and collaborators.</span> -->
+            <!-- <span class="pub-meta">arXiv preprint, 2026.</span> -->
+            <!-- <span class="pub-links"> -->
+              <!-- <a href="https://arxiv.org/abs/0000.00000">arXiv</a> -->
+            <!-- </span> -->
+          <!-- </li> -->
+          <!-- <li class="pub-item"> -->
+            <!-- <span class="pub-title">Another preprint (replace)</span> -->
+            <!-- <span class="pub-authors">A. Author</span> -->
+            <!-- <span class="pub-meta">arXiv preprint, 2025.</span> -->
+            <!-- <span class="pub-links"> -->
+              <!-- <a href="https://arxiv.org/abs/0000.00001">arXiv</a> -->
+            <!-- </span> -->
+          <!-- </li> -->
         </ul>
       </section>
 
-      <section class="section" aria-labelledby="notes-heading">
-        <h2 id="notes-heading">Short notes</h2>
-        <p class="section-lead">Brief posts, drafts, or links. Add real URLs when ready.</p>
+      <section
+        id="notes"
+        class="section section-anchor"
+        aria-labelledby="notes-heading"
+      >
+        <h2 id="notes-heading">Notes</h2>
+        <p class="section-lead">
+          Notes and non-academic writing.
+        </p>
         <ul class="notes-list">
           <li>
-            <a class="note-link" href="#">
-              <span class="note-title">Sample note title</span>
-              <time class="note-date" datetime="2026-03-01">Mar 2026</time>
+            <a class="note-link" href="assets/notes/book.pdf">
+              <span class="note-title">General Notes</span>
             </a>
           </li>
-          <li>
-            <a class="note-link" href="#">
-              <span class="note-title">Another quick thought</span>
-              <time class="note-date" datetime="2026-01-15">Jan 2026</time>
-            </a>
-          </li>
+          <!-- <li> -->
+            <!-- <a class="note-link" href="assets/notes/another-note.pdf"> -->
+              <!-- <span class="note-title">Second note placeholder</span> -->
+              <!-- <time class="note-date" datetime="2026-01-15">Jan 2026</time> -->
+            <!-- </a> -->
+          <!-- </li> -->
         </ul>
       </section>
 
-      <section class="section section--last" aria-labelledby="interests-heading">
-        <h2 id="interests-heading">Interests</h2>
-        <p class="section-lead">Topics and activities you care about.</p>
-        <ul class="interests">
-          <li>Research area one</li>
-          <li>Hobby or side project</li>
-          <li>Reading, tools, or communities</li>
+      <section
+        id="personal"
+        class="section section--last section-anchor"
+        aria-labelledby="personal-heading"
+      >
+        <h2 id="personal-heading">Personal</h2>
+        <p class="section-lead">
+          Non-work bits: hobbies, reading, music, or anything you want visitors
+          to know.
+        </p>
+        <ul class="personal-list">
+          <li>I have an interest in classical music and analytic philosophy.</li>
         </ul>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="wrap">
-        <p>© <span id="year"></span> Your Name. Hosted on <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+        <p>
+          © <span id="year"></span> Trevor Vaughn. Source:
+          <a href="https://github.com/t-vaughn/t-vaughn.github.io">t-vaughn.github.io</a>.
+          Hosted on
+          <a href="https://pages.github.com/">GitHub Pages</a>.
+        </p>
       </div>
     </footer>
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      var navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+      var sections = document.querySelectorAll(".section-anchor");
+      function setCurrent() {
+        var id = "";
+        sections.forEach(function (sec) {
+          var top = sec.getBoundingClientRect().top;
+          if (top <= 120) id = sec.id;
+        });
+        navLinks.forEach(function (a) {
+          a.removeAttribute("aria-current");
+          if (a.getAttribute("href") === "#" + id) a.setAttribute("aria-current", "true");
+        });
+      }
+      window.addEventListener("scroll", setCurrent, { passive: true });
+      setCurrent();
     </script>
   </body>
 </html>
