@@ -21,12 +21,16 @@
 
     <nav class="site-nav" aria-label="Primary">
       <div class="wrap nav-inner">
-        <a class="nav-brand" href="#">Trevor Vaughn</a>
         <ul class="nav-links">
-          <li><a href="#general">General</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#notes">Notes</a></li>
-          <li><a href="#personal">Personal</a></li>
+          <li>
+            <a href="#general" data-page="general">General</a>
+          </li>
+          <li>
+            <a href="#notes" data-page="notes">Notes</a>
+          </li>
+          <li>
+            <a href="#personal" data-page="personal">Personal</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -36,110 +40,135 @@
         <div class="header-text">
           <h1 class="site-title">Trevor Vaughn</h1>
           <p class="lede">
-            Sophomore at Carnegie Mellon University
+            Junior at Carnegie Mellon University (Class of 2028)
           </p>
           <ul class="external-inline">
             <li>
               <a href="https://github.com/t-vaughn" rel="me">GitHub</a>
             </li>
             <li>
-              <a href="mailto:you@example.com">Email</a>
+              <span class="email-obfuscated">t[letter after m]vaughn at cmu.edu</span>
             </li>
           </ul>
         </div>
         <img
           class="avatar"
-          src="assets/avatar-placeholder.svg"
-          width="180"
-          height="180"
+          src="assets/picture_of_me.jpg"
+          width="240"
+          height="240"
           alt=""
         />
       </div>
     </header>
 
     <main id="main" class="wrap layout-main">
-      <section
-        id="general"
-        class="section section-anchor"
+      <div
+        id="page-general"
+        class="page is-active"
+        data-page="general"
         aria-labelledby="general-heading"
       >
-        <h2 id="general-heading">General</h2>
-        <p>
-          My interests lie primarily in graph algorithms, especially those relating to cuts, flows, and graph decompositions. I am also interested in various areas of combinatorics.
-        </p>
-        <p>
-          I am easiest to reach by email.
-        </p>
-      </section>
+        <section class="section">
+          <h2 id="general-heading">About Me</h2>
+          <p>
+            My interests lie primarily in graph algorithms, especially those relating to flows, cuts, and graph decompositions. I also have an interest in algebraic algorithms, convex optimization, and various areas of combinatorics.
+          </p>
+          <p>
+            I also go by the nickname Ash. I am easiest to reach by email.
+          </p>
+        </section>
 
-      <section
-        id="publications"
-        class="section section-anchor"
-        aria-labelledby="pub-heading"
-      >
-        <h2 id="pub-heading">Publications</h2>
-        <p class="section-lead">
-          Preprints and papers.
-        </p>
-        <ul class="pub-list">
-          <!-- <li class="pub-item"> -->
-            <!-- <span class="pub-title">Your paper title (example)</span> -->
-            <!-- <span class="pub-authors">T. Vaughn and collaborators.</span> -->
-            <!-- <span class="pub-meta">arXiv preprint, 2026.</span> -->
-            <!-- <span class="pub-links"> -->
-              <!-- <a href="https://arxiv.org/abs/0000.00000">arXiv</a> -->
-            <!-- </span> -->
-          <!-- </li> -->
-          <!-- <li class="pub-item"> -->
-            <!-- <span class="pub-title">Another preprint (replace)</span> -->
-            <!-- <span class="pub-authors">A. Author</span> -->
-            <!-- <span class="pub-meta">arXiv preprint, 2025.</span> -->
-            <!-- <span class="pub-links"> -->
-              <!-- <a href="https://arxiv.org/abs/0000.00001">arXiv</a> -->
-            <!-- </span> -->
-          <!-- </li> -->
-        </ul>
-      </section>
+        <section class="section" aria-labelledby="pub-heading">
+          <h2 id="pub-heading">Accepted Papers</h2>
+          <ul class="pub-list">
+            <!-- <li class="pub-item"> -->
+              <!-- <span class="pub-title">Your paper title (example)</span> -->
+              <!-- <span class="pub-authors">T. Vaughn and collaborators.</span> -->
+              <!-- <span class="pub-meta">arXiv preprint, 2026.</span> -->
+              <!-- <span class="pub-links"> -->
+                <!-- <a href="https://arxiv.org/abs/0000.00000">arXiv</a> -->
+              <!-- </span> -->
+            <!-- </li> -->
+            <!-- <li class="pub-item"> -->
+              <!-- <span class="pub-title">Another preprint (replace)</span> -->
+              <!-- <span class="pub-authors">A. Author</span> -->
+              <!-- <span class="pub-meta">arXiv preprint, 2025.</span> -->
+              <!-- <span class="pub-links"> -->
+                <!-- <a href="https://arxiv.org/abs/0000.00001">arXiv</a> -->
+              <!-- </span> -->
+            <!-- </li> -->
+          </ul>
+        </section>
 
-      <section
-        id="notes"
-        class="section section-anchor"
+        <section class="section" aria-labelledby="sub-heading">
+          <h2 id="sub-heading">Submitted Papers</h2>
+          <ul class="pub-list">
+            <li class="pub-item">
+              <span class="pub-title">Faster Minimum k-Cut for Simple Graphs and Sparse Weighted Graphs</span>
+              <span class="pub-authors">with Jason Li</span>
+              <span class="pub-meta">SODA</span>
+              <!-- <span class="pub-links"> -->
+                <!-- <a href="https://arxiv.org/abs/0000.00000">arXiv</a> -->
+              <!-- </span> -->
+            </li>
+            <!-- <li class="pub-item"> -->
+              <!-- <span class="pub-title">Another preprint (replace)</span> -->
+              <!-- <span class="pub-authors">A. Author</span> -->
+              <!-- <span class="pub-meta">arXiv preprint, 2025.</span> -->
+              <!-- <span class="pub-links"> -->
+                <!-- <a href="https://arxiv.org/abs/0000.00001">arXiv</a> -->
+              <!-- </span> -->
+            <!-- </li> -->
+          </ul>
+        </section>
+      </div>
+
+      <div
+        id="page-notes"
+        class="page"
+        data-page="notes"
+        hidden
         aria-labelledby="notes-heading"
       >
-        <h2 id="notes-heading">Notes</h2>
-        <p class="section-lead">
-          Notes and non-academic writing.
-        </p>
-        <ul class="notes-list">
-          <li>
-            <a class="note-link" href="assets/notes/notes_algos.pdf">
-              <span class="note-title">Some Notes on Algorithms</span>
-            </a>
-          </li>
-          <!-- <li> -->
-            <!-- <a class="note-link" href="assets/notes/another-note.pdf"> -->
-              <!-- <span class="note-title">Second note placeholder</span> -->
-              <!-- <time class="note-date" datetime="2026-01-15">Jan 2026</time> -->
-            <!-- </a> -->
-          <!-- </li> -->
-        </ul>
-      </section>
+        <section class="section section--solo">
+          <h2 id="notes-heading">Notes and Other Writing</h2>
+          <ul class="notes-list">
+            <li>
+              <a class="note-link" href="assets/notes/notes_algos.pdf">
+                <span class="note-title">Some Notes on Algorithms</span>
+              </a>
+            </li>
+            <li>
+              <a class="note-link" href="assets/notes/class_reccomendations.pdf">
+                <span class="note-title">Class Reccomendations</span>
+              </a>
+            </li>
+            <!-- <li> -->
+              <!-- <a class="note-link" href="assets/notes/another-note.pdf"> -->
+                <!-- <span class="note-title">Second note placeholder</span> -->
+                <!-- <time class="note-date" datetime="2026-01-15">Jan 2026</time> -->
+              <!-- </a> -->
+            <!-- </li> -->
+          </ul>
+        </section>
+      </div>
 
-      <section
-        id="personal"
-        class="section section--last section-anchor"
+      <div
+        id="page-personal"
+        class="page"
+        data-page="personal"
+        hidden
         aria-labelledby="personal-heading"
       >
-        <h2 id="personal-heading">Personal</h2>
-        <!-- <p class="section-lead"> -->
-          <!-- Non-work bits: hobbies, reading, music, or anything you want visitors -->
-          <!-- to know. -->
-        <!-- </p> -->
-        <ul class="personal-list">
-          <li>I have an interest in classical music, film, and philosophy.</li>
-          <li>Favorite film: <a href="https://en.wikipedia.org/wiki/Persona_(1966_film)">Persona</a></li>
-        </ul>
-      </section>
+        <section class="section section--solo">
+          <h2 id="personal-heading">Personal</h2>
+          <ul class="personal-list">
+            <li>I have an interest in classical music, literature, film, and philosophy.</li>
+            <li>Favorite film: <a href="https://en.wikipedia.org/wiki/Persona_(1966_film)">Persona</a></li>
+            <li>Favorite play: Hamlet</li>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <footer class="site-footer">
@@ -156,21 +185,41 @@
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
 
-      var navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
-      var sections = document.querySelectorAll(".section-anchor");
-      function setCurrent() {
-        var id = "";
-        sections.forEach(function (sec) {
-          var top = sec.getBoundingClientRect().top;
-          if (top <= 120) id = sec.id;
+      var pages = document.querySelectorAll(".page");
+      var navLinks = document.querySelectorAll(".nav-links a[data-page]");
+      var defaultPage = "general";
+
+      function showPage(id) {
+        if (!document.getElementById("page-" + id)) id = defaultPage;
+
+        pages.forEach(function (page) {
+          var active = page.dataset.page === id;
+          page.classList.toggle("is-active", active);
+          page.hidden = !active;
         });
-        navLinks.forEach(function (a) {
-          a.removeAttribute("aria-current");
-          if (a.getAttribute("href") === "#" + id) a.setAttribute("aria-current", "true");
+
+        navLinks.forEach(function (link) {
+          var current = link.dataset.page === id;
+          link.setAttribute("aria-current", current ? "page" : "false");
         });
+
+        if (location.hash !== "#" + id) {
+          history.replaceState(null, "", "#" + id);
+        }
       }
-      window.addEventListener("scroll", setCurrent, { passive: true });
-      setCurrent();
+
+      navLinks.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+          showPage(link.dataset.page);
+        });
+      });
+
+      window.addEventListener("hashchange", function () {
+        showPage(location.hash.slice(1) || defaultPage);
+      });
+
+      showPage(location.hash.slice(1) || defaultPage);
     </script>
   </body>
 </html>
